@@ -20,7 +20,7 @@ $ npm run test
 
 ## Usage
 ```javascript
-import formatRMB from 'china-currency';
+import formatRMB from 'format-rmb';
 
 const result = formatRMB(1234567890);
 // result = { errCode: 0, msg: '', value: '人民币壹拾贰亿叁仟肆佰伍拾陆万柒仟捌佰玖拾元整' }
