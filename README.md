@@ -1,4 +1,4 @@
-# ChinaCurrency
+# Format-RMB
 将阿拉伯数字转变为中文金额大写
 
 
@@ -7,7 +7,7 @@
 
 Using npm:
 ```shell
-$ npm install china-currency
+$ npm install --save format-rmb
 ```
 
 ## Test
