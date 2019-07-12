@@ -2,9 +2,10 @@
   "name": "format-rmb",
   "version": "1.0.0",
   "description": "transform currency number to chinese RMB format",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   "homepage": "https://github.com/bazingaedward/ChinaCurrency#readme",
   "devDependencies": {
     "jest": "^24.8.0",
-    "webpack": "^4.35.3"
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5"
   }
 }

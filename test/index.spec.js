@@ -1,9 +1,8 @@
-const formatRMB = require('../index');
+const formatRMB = require('../src/index');
 
 test('小数-两位-整数为0', ()=>{
   const num = 0.56;
   let res = formatRMB(num)
-  console.log(res)
   expect(res.value).toBe('人民币伍角陆分')
 })
 
