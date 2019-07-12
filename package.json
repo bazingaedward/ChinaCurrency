@@ -1,0 +1,26 @@
+{
+  "name": "chinacurrency",
+  "version": "1.0.0",
+  "description": "transform currency to chinese format",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bazingaedward/ChinaCurrency.git"
+  },
+  "keywords": [
+    "currency",
+    "china"
+  ],
+  "author": "Edward Qiu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bazingaedward/ChinaCurrency/issues"
+  },
+  "homepage": "https://github.com/bazingaedward/ChinaCurrency#readme",
+  "devDependencies": {
+    "webpack": "^4.35.3"
+  }
+}
