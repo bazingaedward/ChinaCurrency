@@ -1,4 +1,4 @@
-const formatRMB = require('../src/index');
+const formatRMB = require('../dist/index');
 
 test('小数-两位-整数为0', ()=>{
   const num = 0.56;

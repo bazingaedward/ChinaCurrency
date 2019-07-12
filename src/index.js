@@ -39,7 +39,7 @@ function _parseDecimal(decimal){
  * @param {number} num
  * @return {object} {errCode: 0, msg: '', value: ''} 
  */
- function formatRMB(num, prefix="人民币"){
+function formatRMB(num, prefix="人民币"){
     if(typeof num !== 'number'){
       return {
         errCode: 1,
@@ -88,4 +88,4 @@ function _parseDecimal(decimal){
     };
  }
 
- module.exports = formatRMB;
+module.exports = formatRMB;
