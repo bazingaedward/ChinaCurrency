@@ -1,6 +1,8 @@
 # Format-RMB
 将阿拉伯数字转变为中文金额大写
 
+- 同时支持es5，es6模块
+- 精确到小数点后两位，上限为1兆 = 1,0000,0000,0000
 
 
 ## Installation
@@ -28,6 +30,10 @@ const result = formatRMB(1234567890);
 // custom prefix
 const result = formatRMB(1234567890, prefix='￥'); // prefix default = 人民币
 // result = { errCode: 0, msg: '', value: '￥壹拾贰亿叁仟肆佰伍拾陆万柒仟捌佰玖拾元整' }
+
+// es6 import
+// import formatRMB from 'format-rmb/dist/index.es6'
+
 ```
 
 ## ERROR List
