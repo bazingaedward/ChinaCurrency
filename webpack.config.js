@@ -8,7 +8,7 @@ const es5Config = {
   output: {
     filename: 'index.js',
     path: path.resolve(__dirname, 'dist'),
-    library: 'format-rmb',
+    library: 'FormatRmb',
     libraryTarget: 'commonjs2'
   },
   module: {
@@ -29,7 +29,7 @@ const es6Config = {
   output: {
     filename: 'index.es6.js',
     path: path.resolve(__dirname, 'dist'),
-    library: 'format-rmb',
+    library: 'FormatRmb',
     libraryTarget: 'commonjs2'
   },
   plugins: [
