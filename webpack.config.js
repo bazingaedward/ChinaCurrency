@@ -1,4 +1,6 @@
 const path = require('path');
+const CopyPlugin = require('copy-webpack-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 const es5Config = {
   mode: 'production',
@@ -16,7 +18,9 @@ const es5Config = {
         loader: 'babel-loader'
       }
     ]
-  }
+  },
+  plugins: [
+  ]
 };
 
 const es6Config = {
@@ -28,6 +32,12 @@ const es6Config = {
     library: 'format-rmb',
     libraryTarget: 'commonjs2'
   },
+  plugins: [
+    new CleanWebpackPlugin(),
+    new CopyPlugin([
+      {from: 'src/index.d.ts', to: './'}
+    ])
+  ]
 };
 
-module.exports = [es5Config, es6Config];
+module.exports = [es6Config, es5Config];
