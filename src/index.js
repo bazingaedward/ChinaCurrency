@@ -8,6 +8,8 @@
   * @param {number} unitIdx 
   */
 function _interpolateUnit(segment, unitIdx){
+  if(unitIdx === 1 && /^0+$/.test(segment)) return '';
+
   return segment.split('').reverse().reduce((sum, numKey, idx) => {
     let middleUnit = idx > 0 && numKey !== '0' ? MiddleSepartorLabel[idx] : ''
     return  [DigitalList[numKey], middleUnit, sum].join('');

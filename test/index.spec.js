@@ -42,6 +42,18 @@ test('整数-全部零', ()=>{
   expect(res.value).toBe('人民币壹仟元整')
 })
 
+test('整数-壹万', ()=>{
+  const num = 10000;
+  let res = formatRMB(num)
+  expect(res.value).toBe('人民币壹万元整')
+})
+
+test('整数-壹亿', ()=>{
+  const num = 100000000;
+  let res = formatRMB(num)
+  expect(res.value).toBe('人民币壹亿元整')
+})
+
 test('前缀', ()=>{
   const num = 1000;
   let res = formatRMB(num, '$')
