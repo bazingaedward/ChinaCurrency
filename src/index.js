@@ -49,6 +49,15 @@ function formatRMB(num, prefix="人民币"){
         value: ''
       };
     }
+
+    if(num < 0){
+      return {
+        errCode: 3,
+        msg: `数值错误: ${num}必须为非零整数`,
+        value: ''
+      };
+    }
+
     let isInt = !num.toString().includes('.');
 
     // step 1: 正则匹配进行分段
@@ -66,7 +75,7 @@ function formatRMB(num, prefix="人民币"){
     // step 2: 分批次位数替换
     let integerResult = '';
     if(integerList.length === 1 && integerList[0] === '0'){
-      // 特殊的['0']不作处理
+      integerResult = isInt ? '零元' : ''
     }else {
       integerResult = integerList.map((segment, idx) => {
         return _interpolateUnit(segment, integerList.length - idx - 1);

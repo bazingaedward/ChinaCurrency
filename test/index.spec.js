@@ -30,6 +30,12 @@ test('整数', ()=>{
   expect(res.value).toBe('人民币壹拾贰亿叁仟肆佰伍拾陆万柒仟捌佰玖拾元整')
 })
 
+test('整数-零', ()=>{
+  const num = 0;
+  let res = formatRMB(num)
+  expect(res.value).toBe('人民币零元整')
+})
+
 test('整数-间隔零', ()=>{
   const num = 1002;
   let res = formatRMB(num)
@@ -58,4 +64,10 @@ test('前缀', ()=>{
   const num = 1000;
   let res = formatRMB(num, '$')
   expect(res.value).toBe('$壹仟元整')
+})
+
+test('负数', ()=>{
+  const num = -1000;
+  let res = formatRMB(num)
+  expect(res.errCode).toBe(3)
 })
