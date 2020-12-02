@@ -1,6 +1,6 @@
 {
   "name": "format-rmb",
-  "version": "1.2.1",
+  "version": "1.2.3",
   "description": "transform currency number to chinese RMB format",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
