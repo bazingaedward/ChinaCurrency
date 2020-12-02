@@ -1,10 +1,14 @@
 # Format-RMB
-将阿拉伯数字转变为中文金额大写
+Convert the Arabic numeral to the Chinese numeral in capital letters
 
+- Es5 and ES6 modules are also supported
+- To two decimal places, up to one trillion (1,000,000,000,000)
+- Support Typescript
+
+将阿拉伯数字转变为中文金额大写
 - 同时支持es5，es6模块
 - 精确到小数点后两位，上限为1兆 = 1,0000,0000,0000
 - 支持Typescript
-
 
 ## Installation
 
