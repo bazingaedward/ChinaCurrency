@@ -3,6 +3,10 @@
 ![npm](https://img.shields.io/npm/dt/format-rmb)
 ![NPM](https://img.shields.io/npm/l/format-rmb)
 ![npm bundle size](https://img.shields.io/bundlephobia/min/format-rmb)
+![npms.io (final)](https://img.shields.io/npms-io/maintenance-score/format-rmb)
+![npms.io (final)](https://img.shields.io/npms-io/popularity-score/format-rmb)
+![npms.io (final)](https://img.shields.io/npms-io/quality-score/format-rmb)
+![npm type definitions](https://img.shields.io/npm/types/format-rmb)
 
 Convert the Arabic numeral to the Chinese numeral in capital letters
 
