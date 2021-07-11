@@ -1,4 +1,6 @@
 # Format-RMB
+![npm](https://img.shields.io/npm/dt/format-rmb)
+
 Convert the Arabic numeral to the Chinese numeral in capital letters
 
 - Es5 and ES6 modules are also supported
