@@ -2,6 +2,7 @@
 ![npm](https://img.shields.io/npm/v/format-rmb)
 ![npm](https://img.shields.io/npm/dt/format-rmb)
 ![NPM](https://img.shields.io/npm/l/format-rmb)
+![npm bundle size](https://img.shields.io/bundlephobia/min/format-rmb)
 
 Convert the Arabic numeral to the Chinese numeral in capital letters
 
