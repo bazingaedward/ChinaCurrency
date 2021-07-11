@@ -1,4 +1,5 @@
 # Format-RMB
+![npm](https://img.shields.io/npm/v/format-rmb)
 ![npm](https://img.shields.io/npm/dt/format-rmb)
 
 Convert the Arabic numeral to the Chinese numeral in capital letters
